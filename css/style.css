@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.banner {
+    display: flex;
+    width: 100%;
+}
+.banner img {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 64px;
+}
+
+
+body {
+    background-color: #fcbac6;
+    font-family: 'Fira Sans', sans-serif;
+    color: #4b2b33;
+}
+
+/* NAVBAR */
+nav {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr;
+    height: auto;
+    background-color: #ef6f8b;
+}
+.navbar ul {
+    display: grid;
+}
+.navbar li {
+    text-align: center;
+    list-style-type: none;
+    padding: 4px;
+}
+.navbar a {
+    color: #4b2b33;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar li:hover {
+    background-color:  #fcbac6;
+}
+
+/* MAIN */
+.container {
+    width: 95%;
+    height: auto;
+    background-color: #ef6f8b;
+    border-radius: 2rem;
+    margin: 4% auto 7% auto;
+    padding: 1.5rem;
+    box-shadow: 0 0 20px #3d3d3d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedortarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #fcbac6;
+    border-radius: 2rem;
+    padding: .625rem 0px;
+}
+.contenedor {
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+    padding-bottom: 1rem;
+    color: #4b2b33;
+}
+main {
+    display: grid;
+    grid-area: main;
+    background-color: #fcbac6;
+    padding: 6px;
+}
+
+/* INDEX */
+.textotarjeta {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #4b2b33;
+    overflow-wrap: break-word;
+    line-height: 1.7rem;
+    padding: .5rem .875rem;
+}
+.caja {
+    display: flex;
+    flex-direction: column;
+
+}
+.caja img {
+    width: 15rem;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow: 0 0 8px #3d3d3d;
+}
+.foto {
+    padding: .5rem;
+}
+
+/* SERVICIOS */
+.contenedortarjetas-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: #fcbac6;
+    border-radius: 2rem;
+    padding: .625rem 0px;
+}
+.serv img {
+    display: grid;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 8px #3d3d3d;
+}
+.serv {
+    padding: 4% 10%;
+    display: flex;
+    justify-content: center;
+}
+
+/* PRODUCTOS */
+.contenedortarjetas-servicios img {
+    display: grid;
+    width: 70%;
+    border-radius: 2rem;
+}
+.textoprod {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow-wrap: break-word;
+    line-height: 1.5rem;
+    padding: .5rem .875rem;
+    color: #4b2b33;
+}
+.cardcontenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.card {
+    grid-auto-rows: auto;
+    overflow: hidden;
+    place-items: center;
+    box-shadow: 0 0 12px #3d3d3d;
+    margin: 1.2rem;
+    width: 250px;
+    border-radius: 2rem;
+}
+.card img {
+    aspect-ratio: 1 / 1;
+    width: 250px;
+}
+.card p {
+    font-family: 'Fira Sans', sans-serif;
+    color: #4b2b33;
+    text-align: center;
+    padding: 5px;
+    overflow-wrap: break-word;
+    line-height: 1.7rem;
+}
+
+/* GIFTCARDS */
+.gift {
+    box-shadow: 0 0 12px #3d3d3d;
+    border-radius: 2rem;
+    grid-auto-rows: auto;
+    overflow: hidden;
+    max-width: 70%;
+    margin: 1rem;
+}
+
+.gift img {
+    display: grid;
+    width: 100%;
+}
+
+/* CONTACTO */
+.formu {
+    padding: .6875rem;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #fdcfd9;
+    display: grid;
+    grid-area: footer;
+    padding: 8px;
+}
+footer div {
+    display: grid;
+    place-items: center;
+}
+footer img {
+    /* width: 2rem; */
+    height: 2rem;
+    color: white;
+    padding-left: .3125rem;
+    padding-right: .3125rem;
+}
+.redes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-end: 2;
+    column-gap:.4rem;
+}
+footer a, footer p {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: normal;
+    justify-items: center;
+    align-items: center;
+}
+/* FIN DEL FOOTER */
+
+
+@media (min-width:768px) {
+    nav {
+        width: 100%;
+        background-color: #ef6f8b;
+    }
+    .navbar ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+    }
+    .navbar li:first-child {
+        border-left: none;
+    }
+    .navbar li {
+        text-align: center;
+        border-left: 1px solid #fcbac6;
+    }
+    .navbar a {
+        display: block;
+        color: #4b2b33;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .navbar a:hover {
+        background-color:  #fcbac6;
+    }
+    /* PRODUCTOS */
+    .card {
+        width: 18.75rem;
+        height: 500px;
+    }
+    .card img {
+        width: 18.75rem;
+    }
+
+    .contenedortarjetas, .cardcontenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .textotarjeta {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 1.25rem;
+    }
+    #nombre, #email, #consulta {
+        width: 40rem;
+    }
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+    }
+    footer img {
+        display: grid;
+        align-items: stretch;
+    }
+}
+
+@media (min-width:1024px) {
+    .contenedortarjetas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
