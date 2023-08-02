@@ -1,0 +1,35 @@
+header {
+    .banner {
+        display: flex;
+        width: 100%;
+        img {
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            min-height: 64px;
+        }
+    }    
+    nav {
+        display: grid;
+        grid-area: header;
+        grid-template-columns: 1fr;
+        height: auto;
+        background-color: $background-color-secundario;
+        ul {
+            display: grid;
+        }
+        li {
+            text-align: center;
+            list-style-type: none;
+            font-weight: bold;
+            padding: 4px;
+            &:hover {
+                background-color: $background-principal;
+            }
+        }
+        a {
+            color: $color-text-principal;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.contenedortarjetas-servicios {
+    .formu {
+        padding: .6875rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        .textoformu {
+            @include textos;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            padding: .5rem .875rem;
+        }
+    }
+}
+#name, #email, #consulta {
+    width: auto;
+}

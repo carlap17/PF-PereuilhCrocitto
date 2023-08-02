@@ -1,0 +1,64 @@
+.contenedor {
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    background-color: $background-principal;
+    padding: 6px;
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.7rem;
+        font-family: 'Alfa Slab One', cursive;
+        padding-bottom: 1rem;
+        color: $color-text-principal;
+    }
+    h2 {
+        @include titulo2;
+    }
+}
+.container {
+    width: 95%;
+    height: auto;
+    background-color: $background-color-secundario;
+    border-radius: 2rem;
+    margin: 4% auto 7% auto;
+    padding: 1.5rem;
+    box-shadow: $sombreado;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedortarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: $background-principal;
+    border-radius: 2rem;
+    padding: .625rem 0px;
+}
+.caja {
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 15rem;
+            height: auto;
+            border-radius: 2rem;
+            box-shadow: $sombreado;
+        }
+        .foto {
+            padding: .5rem;
+        }
+        .textotarjeta {
+            @include textos;
+            font-size: 1.2rem;
+            text-align: left;
+            line-height: 1.7rem;
+            padding: .5rem .875rem;
+        }
+    }

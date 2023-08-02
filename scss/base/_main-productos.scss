@@ -1,0 +1,37 @@
+.contenedortarjetas-servicios {
+    img {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 70%;
+        border-radius: 2rem;
+    }
+}
+.cardcontenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    .card {
+        display: grid;
+        grid-auto-rows: auto;
+        overflow: hidden;
+        place-items: center;
+        box-shadow: $sombreado;
+        margin: 1.2rem;
+        width: 250px;
+        height: 450px;
+        border-radius: 2rem;
+        img {
+            width: 250px;
+        }
+        p {
+            @include textos;
+            padding: 5px;
+            line-height: 1.7rem;
+        }
+    }
+    .textoprod {
+        @include textos;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding: .5rem .875rem;
+    }
+}

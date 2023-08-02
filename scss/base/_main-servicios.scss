@@ -1,0 +1,19 @@
+.contenedortarjetas-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: $background-principal;
+    border-radius: 2rem;
+    padding: .625rem 0px;
+    .serv {
+        padding: 4% 10%;
+        display: flex;
+        justify-content: center;
+        img {
+            display: grid;
+            width: 100%;
+            border-radius: 2rem;
+            box-shadow: $sombreado;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@mixin flexbox($wrap, $justify, $align) {
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin titulo2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Alfa Slab One', cursive;
+    padding-bottom: 1rem;
+    color: $color-text-principal;
+}
+
+@mixin textos {
+    font-family: $font-principal;
+    color: $color-text-principal;
+    text-align: center;
+    overflow-wrap: break-word;
+}
