@@ -1,9 +1,14 @@
 .contenedortarjetas-servicios {
-    img {
+    .foto {
         display: grid;
         grid-template-columns: 1fr;
         width: 70%;
         border-radius: 2rem;
+    }
+    p {
+        @include textos;
+        padding: 5px;
+        line-height: 1.7rem;
     }
 }
 .cardcontenedor {
@@ -21,11 +26,6 @@
         border-radius: 2rem;
         img {
             width: 250px;
-        }
-        p {
-            @include textos;
-            padding: 5px;
-            line-height: 1.7rem;
         }
     }
     .textoprod {

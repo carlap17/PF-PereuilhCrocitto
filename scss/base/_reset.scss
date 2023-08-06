@@ -8,4 +8,10 @@ body {
     background-color: $background-principal;
     font-family: $font-principal;
     color: $color-text-principal;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+
 }

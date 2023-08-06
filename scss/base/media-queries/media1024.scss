@@ -4,3 +4,14 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+    /* SERVICIOS */
+    .serv {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        place-items: center;
+        img {
+            display: grid;
+            width: 350px;
+            margin: 2rem;
+        }
+    }

@@ -5,7 +5,7 @@ header {
         img {
             background-size: cover;
             background-position: center center;
-            width: 100%;
+            width: 100vw;
             min-height: 64px;
         }
     }    
@@ -13,16 +13,10 @@ header {
         display: grid;
         grid-area: header;
         grid-template-columns: 1fr;
-        height: auto;
         background-color: $background-color-secundario;
-        ul {
-            display: grid;
-        }
         li {
             text-align: center;
-            list-style-type: none;
             font-weight: bold;
-            padding: 4px;
             &:hover {
                 background-color: $background-principal;
             }

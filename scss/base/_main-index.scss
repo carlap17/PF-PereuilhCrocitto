@@ -1,15 +1,9 @@
-.contenedor {
-    grid-template-areas:
-        "header header header"
-        "main main main"
-        "footer footer footer";
-}
-
 main {
     display: grid;
     grid-area: main;
     background-color: $background-principal;
     padding: 6px;
+    overflow-x: hidden;
     h1 {
         width: 100%;
         text-align: center;
@@ -23,7 +17,7 @@ main {
     }
 }
 .container {
-    width: 95%;
+    width: 90%;
     height: auto;
     background-color: $background-color-secundario;
     border-radius: 2rem;
