@@ -4,19 +4,18 @@
     place-items: center;
     background-color: $background-principal;
     border-radius: 2rem;
-    padding: .625rem 0px;
+    padding: 1rem;
     .serv {
         display: grid;
-        width: 70%;
-        
+        place-items: center;
         img {
-            display: grid;
-            width: 100%;
-            grid-auto-rows: auto;
-            margin: 1.5rem;
+            width: 15.625rem;
+            height: 25rem;    
+            margin: 1.2rem 0px;
             box-shadow: $sombreado;
-        border-radius: 2rem;
-        overflow: hidden;
+            border-radius: 2rem;
+            overflow: hidden;
+            background-color: #fed3da;
         }
         p {
             @include textos;

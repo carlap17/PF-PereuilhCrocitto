@@ -133,20 +133,20 @@ main h2 {
   place-items: center;
   background-color: #fcbac6;
   border-radius: 2rem;
-  padding: 0.625rem 0px;
+  padding: 1rem;
 }
 .contenedortarjetas-servicios .serv {
   display: grid;
-  width: 70%;
+  place-items: center;
 }
 .contenedortarjetas-servicios .serv img {
-  display: grid;
-  width: 100%;
-  grid-auto-rows: auto;
-  margin: 1.5rem;
+  width: 15.625rem;
+  height: 25rem;
+  margin: 1.2rem 0px;
   box-shadow: 0 0 12px #3d3d3d;
   border-radius: 2rem;
   overflow: hidden;
+  background-color: #fed3da;
 }
 .contenedortarjetas-servicios .serv p {
   font-family: "Fira Sans", sans-serif;
@@ -176,11 +176,9 @@ main h2 {
 }
 .cardcontenedor .card {
   display: grid;
-  grid-auto-rows: auto;
   overflow: hidden;
-  place-items: center;
   box-shadow: 0 0 12px #3d3d3d;
-  margin: 1.2rem;
+  margin: 1.2rem 0px;
   width: 250px;
   height: 450px;
   border-radius: 2rem;
@@ -214,8 +212,18 @@ main h2 {
   padding: 0.5rem 0.875rem;
 }
 
-#name, #email, #consulta {
+#nombre, #email, #consulta {
   width: auto;
+  opacity: 70%;
+  font-weight: bold;
+}
+
+.enviar {
+  background-color: #ef6f8b;
+  color: azure;
+  font-weight: bold;
+  opacity: 60%;
+  border-radius: 1rem;
 }
 
 footer {
@@ -267,21 +275,34 @@ footer div .redes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .card {
+  .contenedortarjetas .card, .cardcontenedor .card {
     width: 18.75rem;
     height: 500px;
+    margin: 1.2rem;
   }
-  .card img {
-    width: 18.75rem;
+  .contenedortarjetas .card img, .cardcontenedor .card img {
+    width: 100%;
   }
-  .serv {
+  .contenedortarjetas-servicios .serv {
     display: grid;
-    max-width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedortarjetas-servicios .serv img {
+    width: 18.75rem;
+    height: 23.4375rem;
+    margin: 1rem;
   }
   .textotarjeta {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1.25rem;
+  }
+  .formu {
+    width: auto;
+  }
+  .formu #nombre, .formu #email, .formu #consulta, .formu .enviar {
+    font-size: 22px;
+    border-radius: 1rem;
   }
   footer {
     grid-template-columns: repeat(2, 1fr);
@@ -301,16 +322,9 @@ footer div .redes {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/* SERVICIOS */
-.serv {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-}
 .serv img {
-  display: grid;
   width: 350px;
-  margin: 2rem;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

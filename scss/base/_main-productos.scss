@@ -16,11 +16,9 @@
     grid-template-columns: 1fr;
     .card {
         display: grid;
-        grid-auto-rows: auto;
         overflow: hidden;
-        place-items: center;
         box-shadow: $sombreado;
-        margin: 1.2rem;
+        margin: 1.2rem 0px;
         width: 250px;
         height: 450px;
         border-radius: 2rem;

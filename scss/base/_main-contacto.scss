@@ -12,6 +12,15 @@
         }
     }
 }
-#name, #email, #consulta {
+#nombre, #email, #consulta {
     width: auto;
+    opacity: 70%;
+    font-weight: bold;
+}
+.enviar {
+    background-color: $background-color-secundario;
+    color: azure;
+    font-weight: bold;
+    opacity: 60%;
+    border-radius: 1rem;
 }

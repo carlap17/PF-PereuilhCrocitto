@@ -19,22 +19,39 @@
     .contenedortarjetas, .cardcontenedor {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-    .card {
-        width: 18.75rem;
-        height: 500px;
-        img {
+        .card {
             width: 18.75rem;
-        }
+            height: 500px;
+            margin: 1.2rem;
+            img {
+                width: 100%;
+            }
     }
-    .serv {
-        display: grid;
-        max-width: 50%;
+
+    }
+    .contenedortarjetas-servicios {
+        .serv {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            img {
+                width: 18.75rem;
+                height: 23.4375rem;
+                margin: 1rem;
+            }
+        }
     }
     .textotarjeta {
         padding-top: .5rem;
         padding-bottom: .5rem;
         padding-left: 1.25rem;
+    }
+    .formu {
+        width: auto;
+        #nombre, #email, #consulta, .enviar{
+            font-size: 22px;
+            border-radius: 1rem;
+        }
+        
     }
     footer {
         grid-template-columns: repeat(2, 1fr);
