@@ -7,6 +7,7 @@
         .textoformu {
             @include textos;
             font-size: 1.2rem;
+            font-weight: bold;
             line-height: 1.7rem;
             padding: .5rem .875rem;
         }
@@ -15,7 +16,6 @@
 #nombre, #email, #consulta {
     width: auto;
     opacity: 70%;
-    font-weight: bold;
 }
 .enviar {
     background-color: $background-color-secundario;

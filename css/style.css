@@ -208,6 +208,7 @@ main h2 {
   text-align: center;
   overflow-wrap: break-word;
   font-size: 1.2rem;
+  font-weight: bold;
   line-height: 1.7rem;
   padding: 0.5rem 0.875rem;
 }
@@ -215,7 +216,6 @@ main h2 {
 #nombre, #email, #consulta {
   width: auto;
   opacity: 70%;
-  font-weight: bold;
 }
 
 .enviar {
