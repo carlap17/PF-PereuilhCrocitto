@@ -17,6 +17,9 @@ main {
     }
 }
 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
     height: auto;
     background-color: $background-color-secundario;
@@ -24,13 +27,11 @@ main {
     margin: 4% auto 7% auto;
     padding: 1.5rem;
     box-shadow: $sombreado;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .contenedortarjetas {
     display: grid;
     grid-template-columns: 1fr;
+    width: 95%;
     place-items: center;
     background-color: $background-principal;
     border-radius: 2rem;
@@ -39,7 +40,12 @@ main {
 .caja {
         display: flex;
         flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
         img {
+            display: flex;
             width: 15rem;
             height: auto;
             border-radius: 2rem;

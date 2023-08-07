@@ -1,13 +1,13 @@
 .contenedortarjetas-servicios {
     .formu {
-        padding: .6875rem;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
+        width: 95%;
+        padding: .6875rem;
         .textoformu {
             @include textos;
             font-size: 1.2rem;
-            font-weight: bold;
             line-height: 1.7rem;
             padding: .5rem .875rem;
         }

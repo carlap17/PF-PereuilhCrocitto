@@ -65,6 +65,9 @@ main h2 {
 }
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 90%;
   height: auto;
   background-color: #ef6f8b;
@@ -72,14 +75,12 @@ main h2 {
   margin: 4% auto 7% auto;
   padding: 1.5rem;
   box-shadow: 0 0 12px #3d3d3d;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .contenedortarjetas {
   display: grid;
   grid-template-columns: 1fr;
+  width: 95%;
   place-items: center;
   background-color: #fcbac6;
   border-radius: 2rem;
@@ -89,8 +90,13 @@ main h2 {
 .caja {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .caja img {
+  display: flex;
   width: 15rem;
   height: auto;
   border-radius: 2rem;
@@ -130,6 +136,7 @@ main h2 {
 .contenedortarjetas-servicios {
   display: grid;
   grid-template-columns: 1fr;
+  width: 100%;
   place-items: center;
   background-color: #fcbac6;
   border-radius: 2rem;
@@ -197,10 +204,11 @@ main h2 {
 }
 
 .contenedortarjetas-servicios .formu {
-  padding: 0.6875rem;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  width: 95%;
+  padding: 0.6875rem;
 }
 .contenedortarjetas-servicios .formu .textoformu {
   font-family: "Fira Sans", sans-serif;
@@ -208,7 +216,6 @@ main h2 {
   text-align: center;
   overflow-wrap: break-word;
   font-size: 1.2rem;
-  font-weight: bold;
   line-height: 1.7rem;
   padding: 0.5rem 0.875rem;
 }
